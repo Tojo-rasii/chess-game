@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(240, 240, 240);
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+main section{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 1.1em;
+    outline: 1px solid #c1c1c1;
+}
+main section article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main section article span{
+    outline: 1px solid #c1c1c1;
+    width: 4.5em;
+    height: 4.5em;
+    text-align: center;
+}
+main section article span img{
+    cursor: pointer;
+}
+
+main section article:nth-child(1) span:nth-child(even),main section article:nth-child(3) span:nth-child(even),main section article:nth-child(5) span:nth-child(even),main section article:nth-child(7) span:nth-child(even){
+    background: #c1c1c1;
+}
+main section article:nth-child(2) span:nth-child(odd),main section article:nth-child(4) span:nth-child(odd),main section article:nth-child(6) span:nth-child(odd),main section article:nth-child(8) span:nth-child(odd){
+    background: #c1c1c1;
+}
+
+/* ... (votre code existant) */
+
+main section article span:nth-child(odd).selected, main section article span:nth-child(even).selected {
+    background-color: #aaffaa;
+    outline: 1px solid #aaffaa; /* ou toute autre couleur de votre choix */
+}
+
+/* ... (votre code existant) */
+
+
